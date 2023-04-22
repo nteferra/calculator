@@ -5,9 +5,10 @@ const multiply = (a, b) => (a * b);
 const divide = (a, b) => (a / b);
 
 //calculator variables
-let fNum = 0
-let sNum = 0
-let oprtr = ''
+let x = 0;
+let y = '';
+let z = 0;
+
 
 function operate(x, y, z) {
     if (y === '+') {
