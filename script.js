@@ -10,3 +10,16 @@ const op = {
     second: 0,
     erator: "",
 }
+
+function operate(a, b, c) {
+    switch (c) {
+        case "+":
+            return calc.add(a,b);
+        case "-":
+            return calc.subtract(a,b);
+        case "x":
+            return calc.multiply(a,b)
+        case "/":
+            return calc.divide(a,b);
+    }
+}
