@@ -6,9 +6,10 @@ body {
 
 #frame {
     display: flex;
-    height: 500px;
+    height: 400px;
     width: 300px;
     border: 2px solid black;
+    border-radius: 8px;
     flex-direction: column;
     align-items: center;
     background-color: coral;
@@ -20,33 +21,54 @@ body {
     border: 1px solid black;
     margin: 1em 1em;
     background-color: aliceblue;
+    font-size: 24pt;
+    text-align: right;
+    
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 40px;
-    height: 21pt;
-    font-size: 20pt;
-    background-color: bisque;
-
+div {
+   justify-content: center; 
+   justify-items: center;
 }
+
+div.span2 {
+    grid-column: span 1 / 3;
+}
+
 
 #buttons {
-    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: auto;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
 }
 
 #numBut {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
+   
     text-align: center;
+    align-items: baseline;
     width: 200px;
     height: 300px;
 }
 
 #opBut {
-    display: grid;
+   
+}
+
+input[type="button"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+    height: 24pt;
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
 }
